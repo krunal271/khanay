@@ -28,6 +28,7 @@
 						    	<form action="{{ url('SignUp')}}" method="post">
 			                  		<div class="form-group">  
 			                  		{{ csrf_field() }}
+			                  		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 			                  		    <label class="">First Name </label>
 										<input type="text" name="userName" class="form-control">
 									</div>
